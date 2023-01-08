@@ -30,4 +30,4 @@ class Directors(models.Model):
 class movies(models.Model):
 	title = models.CharField(max_length=35)
 	Genre = models.ManyToManyField(Genres)
-	summary = models.TextField(max_length=150, help_text='Escribe un breve resumen')
+	summary = models.TextField(max_length=150, help_text='Escribe un breve resumen', null=True)
